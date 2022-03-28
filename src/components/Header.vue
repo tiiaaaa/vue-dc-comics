@@ -11,7 +11,6 @@
                 </li>
             </ul>
         </nav>
-
     </div>
 </template>
 
@@ -88,15 +87,15 @@ export default {
 
 <style lang='scss' scoped>
     div.header{
-        height: 15vh;
+        height: 13vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: aqua;
 
         div#logo-wrapper{
-            height: 80px;
-            width: 80px;
+            height: 70px;
+            width: 70px;
 
             img{
                 width: 100%;
@@ -112,7 +111,7 @@ export default {
                     margin-left: 1.2rem;
 
                     a{
-                        font-size: 0.8rem;
+                        font-size: 0.7rem;
                         text-decoration: none;
                         text-transform: uppercase;
                         color: black;

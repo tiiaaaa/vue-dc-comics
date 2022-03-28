@@ -29,9 +29,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./assets/scss/style.scss";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  width: 90%;
-  margin: 0 auto;
 }
 </style>
