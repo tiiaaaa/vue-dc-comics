@@ -1,18 +1,18 @@
 <template>
     <div id="main-content-card">
-      <section class="my-container">
-          <div class="card" v-for="(item, index) in thumbList" :key="index">
-              <div class="card-immage">
-                  <img :src="item.thumb" :alt="item.series">
-              </div>
-              <div class="card-text">
-                <h5>{{item.series}}</h5>
-                <p>{{item.price}}</p>
-              </div>
-          </div>
+        <section class="my-container">
+            <div class="card" v-for="(item, index) in thumbList" :key="index">
+                <div class="card-immage">
+                    <img :src="item.thumb" :alt="item.series">
+                </div>
+                <div class="card-text">
+                    <h5>{{item.series}}</h5>
+                    <p>{{item.price}}</p>
+                </div>
+            </div>
 
-          <a href="#" class="btn-card">load more</a>
-      </section>
+            <a href="#" class="btn-card">load more</a>
+        </section>
     </div>
 </template>
 
@@ -117,56 +117,56 @@ export default {
 @import '../assets/scss/partials/_variables.scss';
     
     div#main-content-card{
-      padding: 2.5rem 0;
-      
-      section.my-container{
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
+        padding: 2.5rem 0;
+        
+        section.my-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
 
-        div.card{
-          width: calc(100% / 6);
-          padding: .5rem;
-          margin-bottom: .8rem;
+            div.card{
+            width: calc(100% / 6);
+            padding: .5rem;
+            margin-bottom: .8rem;
 
-          div.card-immage{
-              height: 150px;
-              margin-bottom: .5rem;
+            div.card-immage{
+                height: 150px;
+                margin-bottom: .5rem;
 
-            img{
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              object-position: top;
+                img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+                }
             }
-          }
 
-          div.card-text{
-              color: white;
+            div.card-text{
+                color: white;
 
-              h5{
-                font-size: .8rem;
-                margin-bottom: .3rem;
-              }
+                h5{
+                    font-size: .8rem;
+                    margin-bottom: .3rem;
+                }
 
-              p{
-                font-size: .8rem;
-              }
-          }
+                p{
+                    font-size: .8rem;
+                }
+            }
+            }
+
+            a.btn-card{
+            width: 20%;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: .8rem;
+            color: white;
+            padding: .6rem 0;
+            background-color: $primaryColor;
+            }
         }
-
-        a.btn-card{
-          width: 20%;
-          text-align: center;
-          text-decoration: none;
-          text-transform: uppercase;
-          font-weight: 600;
-          font-size: .8rem;
-          color: white;
-          padding: .6rem 0;
-          background-color: $primaryColor;
-        }
-      }
     }
 
 </style>
