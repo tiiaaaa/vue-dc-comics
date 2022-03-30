@@ -1,7 +1,7 @@
 <template>
     <div id="main-content-card">
         <section class="my-container">
-            <div class="card" v-for="(item, index) in thumbList" :key="index">
+            <a href="#" class="card" v-for="(item, index) in thumbList" :key="index">
                 <div class="card-immage">
                     <img :src="item.thumb" :alt="item.series">
                 </div>
@@ -9,7 +9,7 @@
                     <h5>{{item.series}}</h5>
                     <p>{{item.price}}</p>
                 </div>
-            </div>
+            </a>
 
             <a href="#" class="btn-card">load more</a>
         </section>
@@ -124,9 +124,10 @@ export default {
             flex-wrap: wrap;
             justify-content: center;
 
-            div.card{
+            a.card{
             width: calc(100% / 6);
             padding: .5rem;
+            text-decoration: none;
             margin-bottom: .8rem;
 
             div.card-immage{
