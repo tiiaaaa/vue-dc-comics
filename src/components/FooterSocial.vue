@@ -16,19 +16,19 @@
                 </a>
 
                 <a href="#" class="rounded-btn">
-                    <img src="../assets/img/footer-facebook.png" alt="">
+                    <img src="../assets/img/footer-twitter.png" alt="">
                 </a>
 
                 <a href="#" class="rounded-btn">
-                    <img src="../assets/img/footer-facebook.png" alt="">
+                    <img src="../assets/img/footer-youtube.png" alt="">
                 </a>
 
                 <a href="#" class="rounded-btn">
-                    <img src="../assets/img/footer-facebook.png" alt="">
+                    <img src="../assets/img/footer-pinterest.png" alt="">
                 </a>
 
                 <a href="#" class="rounded-btn">
-                    <img src="../assets/img/footer-facebook.png" alt="">
+                    <img src="../assets/img/footer-periscope.png" alt="">
                 </a>
             </div>
         </section>

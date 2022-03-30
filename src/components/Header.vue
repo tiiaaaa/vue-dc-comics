@@ -121,7 +121,7 @@ export default {
                     margin-left: 1.2rem;
                     height: 100%;
 
-                    &:active,
+                    &:hover,
                     &.active{
                         border-bottom: 3px solid $primaryColor;
                     }

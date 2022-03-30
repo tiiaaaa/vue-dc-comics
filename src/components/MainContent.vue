@@ -1,13 +1,22 @@
 <template>
     <div id="main-content">
 
+        <MainContentJumbotron/>
+        <MainContentCard/>
+
     </div>
 </template>
 
 <script>
-export default {
-    name: 'MainContent'
+import MainContentJumbotron from './MainContentJumbotron.vue';
+import MainContentCard from './MainContentCard.vue';
 
+export default {
+    name: 'MainContent',
+    components:{
+        MainContentJumbotron,
+        MainContentCard
+    },
 }
 </script>
 
@@ -15,7 +24,6 @@ export default {
     @import '../assets/scss/partials/_variables.scss';
 
     div#main-content{
-        height: 13vh;
         background-color: $darkColor;
     }
     
