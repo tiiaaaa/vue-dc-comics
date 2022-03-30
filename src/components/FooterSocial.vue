@@ -1,15 +1,15 @@
 <template>
-  <div>
-      
-  </div>
+    <div id="footer-social">
+        
+    </div>
 </template>
 
 <script>
 export default {
-
+    name:'FooterSocial'
 }
 </script>
 
-<style>
+<style lang='scss' scoped>
 
 </style>
