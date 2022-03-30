@@ -6,13 +6,30 @@
                 sign-up now!
             </a>
             
-            <div>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
+            <div class="flex-wrap">
+                <a href="#" class="follow">
+                    follow us
+                </a>
+
+                <a href="#" class="rounded-btn">
+                    <img src="../assets/img/footer-facebook.png" alt="">
+                </a>
+
+                <a href="#" class="rounded-btn">
+                    <img src="../assets/img/footer-facebook.png" alt="">
+                </a>
+
+                <a href="#" class="rounded-btn">
+                    <img src="../assets/img/footer-facebook.png" alt="">
+                </a>
+
+                <a href="#" class="rounded-btn">
+                    <img src="../assets/img/footer-facebook.png" alt="">
+                </a>
+
+                <a href="#" class="rounded-btn">
+                    <img src="../assets/img/footer-facebook.png" alt="">
+                </a>
             </div>
         </section>
     </div>
@@ -42,6 +59,28 @@ export default {
                 text-decoration: none;
                 text-transform: uppercase;
                 font-size: .8rem;
+            }
+
+            div.flex-wrap{
+                display: flex;
+                align-items: center ;
+                justify-content: space-evenly;
+                width: 35%;
+
+                a.follow{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color: $primaryColor;
+                }
+
+                a.rounded-btn{
+                    display: inline-block;
+
+                    img{
+                    width: 30px;
+                }
+                }
             }
         }
     }
