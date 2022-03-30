@@ -1,55 +1,55 @@
 <template>
-    <div>
-        <div id="content"></div>
-        <div id="gadjet-bar">
+    <nav id="main-nav">
+        <section class="my-container">
             <ul>
-                <li v-for="(link, index) in gadjetLinks" :key="index">
-                    <a href="#">
-                        <div class="gadjet-img">
-                            <img :src="link.immage" alt="">
-                        </div>
-                        <span>{{link.text}}</span>
+                <li v-for="(element, index) in listItem" :key="index">
+                    <a :href="element.url">
+                        <img :src="require(`@/assets/img/${element.immage}`)" alt="">
+                        <span>{{element.text}}</span>
                     </a>
                 </li>
             </ul>
-        </div>
-    </div>
+        </section>
+    </nav>
 </template>
 
 <script>
 export default {
-    name: 'IndexProducts',
+    name: 'MainNav',
         data: function(){
         return{
-            gadjetLinks:[
+            listItem:[
                 {
                     text: "digital comics",
                     url:"#",
-                    immage: "../assets/img/buy-comics-digital-comics.png",
+                    immage: "buy-comics-digital-comics.png",
                     current: "",
                 },
 
                 {
                     text: "dc merchandise",
                     url:"#",
+                    immage: "buy-comics-merchandise.png",
                     current: "",
                 },
 
                 {
                     text: "subscription",
                     url:"#",
+                    immage: "buy-comics-shop-locator.png",
                     current: "",
                 },
 
                 {
                     text: "comic shop locator",
                     url:"#",
+                    immage: "buy-comics-subscriptions.png",
                     current: "",
                 },
 
                 {
                     text: "dc power visa",
-                    url:"#",
+                    immage: "buy-dc-power-visa.svg",
                     current: "",
                 },
             ]
@@ -59,36 +59,42 @@ export default {
 </script>
 
 <style  lang='scss' scoped>
-    div#content{
-        height: 13vh;
-        background-color: black;
-    }
+    @import '../assets/scss/partials/_variables.scss';
 
-    div#gadjet-bar{
-        height: 15vh;
-        display: flex;
-        align-items: center;
-        background-color: rgb(48, 82, 231);
+    nav#main-nav{
+        height: 16vh;
+        background-color: $primaryColor;
+
+        section.my-container{
+            height: 100%;
+        }
 
         ul{
             display: flex;
+            justify-content: space-around;
+            height: 100%;
+
             li{
                 list-style-type: none;
+                display: flex;
+                align-items: center;
+                padding: .8rem;
+                
                 a{
                     display: flex;
                     text-decoration: none;
                     color: white;
-                    div.gadjet-img{
-                        width: 35px;
+                    
+                    img{
+                        height: 50px;
                         margin-right: 1rem;
-                        img{
-                            width: 100%;
-                        }
                     }
-
+                    
                     span{
                         text-transform: uppercase;
+                        line-height: 45px;
                         font-size: 0.7rem;
+                        font-weight: 600;
                     }
                 }
             }
